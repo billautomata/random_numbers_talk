@@ -1,76 +1,81 @@
-
+<!doctype html>
 <html charset='utf-8'>
 <head>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title></title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <style>
+      body {
+        padding: 0px;
+        margin: 0px;
+        /*overflow: hidden;*/
+      }
+
+      div.link{
+        /*font-size: 32px;*/
+        /*padding: 2px;*/
+        /*position: absolute;*/
+        bottom: 2px;
+        left: 2px;
+        font-family: Helvetica;
+      }
+
+      </style>
+      <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="css/main.css">
+
+      <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  </head>
+
+
   <title>random number plotter</title>
-  <style>
-  body {
-    padding: 5px;
-    margin: 0px;
-    /*overflow: hidden;*/
-  }
 
-  div.link{
-    font-size: 32px;
-    padding: 2px;
-    position: absolute;
-    bottom: 2px;
-    left: 2px;
-    font-family: Helvetica;
-  }
-
-  a:visited {
-
-    color: black;
-
-  }
-
-  a {
-    color: black;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  </style>
 
 </head>
 <body>
 
-  <div id='container'>
+  <div id='container' class='container'>
     <div style='position: fixed; z-index: -2; width: 250px;'>
-      <img src='' class='snarf' style='width:100%; outline: 1px dotted black;' />
+      <img src='' class='snarf' style='width:100%; outline: 1px solid black;' />
       <h1></h1>
     </div>
   </div>
 
-  <div class='link'>
-    <a href='https://github.com/billautomata/piday_2015'>| git repo</a>
-    <a href='index2.html?imagename=all_white.jpg&method=image'>| all white</a>
-    <a href='index2.html?imagename=all_black.jpg&method=image'>| all black</a>
-    <a href='index2.html?imagename=gradient_diag.jpg&method=image'>| gradient diag</a>
-    <a href='index2.html?imagename=pdx_cc.jpg&method=image'>| pdx_cc_image</a>
-    <a href='index2.html?imagename=boysquare.jpg&method=image'>| color image</a>
-    <a href='index2.html?imagename=boysquare_bw.jpg&method=image'>| bw image</a>
-    <a href='index2.html?imagename=boysquare_bw_blurred.jpg&method=image'>| bw image blurred</a>
-    <a href='index2.html?imagename=gradient.jpg&method=image'>| gradient</a>
-    <a href='index2.html?imagename=screenshot.jpg&method=image'>| screenshot</a>
-    <a href='index2.html?method=js'>| Math.random()</a>
-    <a href='index2.html?method=normal'>| d3 normal </a>
+  <div class='link container col-md-12'>
+    <a class='btn btn-primary' href='https://github.com/billautomata/piday_2015'>git repo</a>
+    <a class='btn btn-primary' href='index2.html?imagename=all_white.jpg&method=image'>all white</a>
+    <a class='btn btn-primary' href='index2.html?imagename=all_black.jpg&method=image'>all black</a>
+    <a class='btn btn-primary' href='index2.html?imagename=gradient_diag.jpg&method=image'>gradient diag</a>
+    <a class='btn btn-primary' href='index2.html?imagename=pdx_cc.jpg&method=image'>pdx_cc_image</a>
+    <a class='btn btn-primary' href='index2.html?imagename=boysquare.jpg&method=image'>color image</a>
+    <a class='btn btn-primary' href='index2.html?imagename=boysquare_bw.jpg&method=image'>bw image</a>
+    <a class='btn btn-primary' href='index2.html?imagename=boysquare_bw_blurred.jpg&method=image'>bw image blurred</a>
+    <a class='btn btn-primary' href='index2.html?imagename=gradient.jpg&method=image'>gradient</a>
+    <a class='btn btn-primary' href='index2.html?imagename=screenshot.jpg&method=image'>screenshot</a>
+    <a class='btn btn-primary' href='index2.html?method=js'>Math.random()</a>
+    <a class='btn btn-primary' href='index2.html?method=normal'>d3 normal </a>
 
-    <a href='index2.html?imagename=all_white.jpg&method=image&compressed=true'>| all white (c)</a>
-    <a href='index2.html?imagename=all_black.jpg&method=image&compressed=true'>| all black (c)</a>
-    <a href='index2.html?imagename=gradient_diag.jpg&method=image&compressed=true'>| gradient diag (c)</a>
-    <a href='index2.html?imagename=pdx_cc.jpg&method=image&compressed=true'>| pdx_cc_image (c)</a>
-    <a href='index2.html?imagename=boysquare.jpg&method=image&compressed=true'>| color image (c)</a>
-    <a href='index2.html?imagename=boysquare_bw.jpg&method=image&compressed=true'>| bw image (c)</a>
-    <a href='index2.html?imagename=boysquare_bw_blurred.jpg&method=image&compressed=true'>| bw image blurred (c)</a>
-    <a href='index2.html?imagename=gradient.jpg&method=image&compressed=true'>| gradient (c)</a>
-    <a href='index2.html?imagename=screenshot.jpg&method=image&compressed=true'>| screenshot (c)</a>
-    <a href='index.html'>| SCOPE</a>
+    <a class='btn btn-primary' href='index2.html?imagename=all_white.jpg&method=image&compressed=true'>all white (c)</a>
+    <a class='btn btn-primary' href='index2.html?imagename=all_black.jpg&method=image&compressed=true'>all black (c)</a>
+    <a class='btn btn-primary' href='index2.html?imagename=gradient_diag.jpg&method=image&compressed=true'>gradient diag (c)</a>
+    <a class='btn btn-primary' href='index2.html?imagename=pdx_cc.jpg&method=image&compressed=true'>pdx_cc_image (c)</a>
+    <a class='btn btn-primary' href='index2.html?imagename=boysquare.jpg&method=image&compressed=true'>color image (c)</a>
+    <a class='btn btn-primary' href='index2.html?imagename=boysquare_bw.jpg&method=image&compressed=true'>bw image (c)</a>
+    <a class='btn btn-primary' href='index2.html?imagename=boysquare_bw_blurred.jpg&method=image&compressed=true'>bw image blurred (c)</a>
+    <a class='btn btn-primary' href='index2.html?imagename=gradient.jpg&method=image&compressed=true'>gradient (c)</a>
+    <a class='btn btn-primary' href='index2.html?imagename=screenshot.jpg&method=image&compressed=true'>screenshot (c)</a>
+
+    <a class='btn btn-primary' href='index.html'>SCOPE</a>
 
   </div>
+  <script src="js/vendor/jquery-1.11.2.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+
   <script src='bundle2.js' charset = 'utf-8'></script>
 </body>
 </html>
