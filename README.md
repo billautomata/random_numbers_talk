@@ -1,4 +1,9 @@
-#[`demonstration of the project`](http://billautomata.github.io/random_numbers_talk/)
+
+
+###[`demonstration of the project`](http://billautomata.github.io/random_numbers_talk/)
+
+
+This is a continuation of my [PI Day project](https://github.com/billautomata/piday_2015).
 
 # scope mode
 
@@ -43,3 +48,7 @@ function tick(){
   }
 }
 ```
+
+
+
+# why do this?
